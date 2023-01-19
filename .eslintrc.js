@@ -1,1 +1,1 @@
-module.exports = require('./configs/base')
+module.exports = require('./configs/javascript')
