@@ -1,0 +1,28 @@
+{
+  "name": "@leukeleu/eslint-config",
+  "repository": "https://github.com/leukeleu/eslint-config.git",
+  "version": "0.0.1",
+  "description": "Reusable Eslint config for Leukeleu projects",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier . --cache",
+    "lint:prettier": "npm run prettier -- --check",
+    "lintfix:prettier": "npm run prettier -- --write",
+    "lint:js": "eslint . --cache",
+    "lintfix:js": "npm run lint:js -- --fix",
+    "lint": "npm run lint:prettier && npm run lint:js",
+    "lintfix": "npm run lintfix:prettier && npm run lintfix:js"
+  },
+  "keywords": [
+    "config",
+    "eslint"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "~8.32.0",
+    "eslint-config-prettier": "~8.6.0"
+  },
+  "devDependencies": {
+    "@leukeleu/prettier-config": "~1.2.3"
+  }
+}
