@@ -2,8 +2,7 @@
 
 ## Installing this package
 
-If you already had Eslint installed in your project you can delete this first with `npm uninstall eslint`. There may also be other e
-Eslint packages you want to remove.
+If you already had Eslint installed in your project you can delete this first with `npm uninstall eslint`. There may also be other Eslint packages you want to remove.
 
 Then install this package as a development dependency `npm i -D @leukeleu/eslint-config`.
 
