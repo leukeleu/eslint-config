@@ -8,11 +8,12 @@ Then install this package as a development dependency `npm i -D @leukeleu/eslint
 
 ## Adding the config
 
-In your `.eslintrc.js` add:
+In the configs folder you can find all the Eslint config files to choose from.
+Select the config you need and add it to your `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: ['@leukeleu/eslint-config'],
+  extends: ['@leukeleu/eslint-config/configs/javascript'],
 }
 ```
 
@@ -37,7 +38,7 @@ This is not recommended as the goal is have similar settings in all projects, bu
 
 ```js
 module.exports = {
-  extends: ['@leukeleu/eslint-config'],
+  extends: ['@leukeleu/eslint-config/configs/javascript'],
   rules: {
     'for-direction': 'warning',
   },
