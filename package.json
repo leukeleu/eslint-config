@@ -15,12 +15,17 @@
   "keywords": [
     "config",
     "eslint",
-    "javascript"
+    "javascript",
+    "vue3"
   ],
   "license": "MIT",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "~5.48.2",
+    "@typescript-eslint/parser": "~5.48.2",
     "eslint": "~8.32.0",
-    "eslint-config-prettier": "~8.6.0"
+    "eslint-config-prettier": "~8.6.0",
+    "eslint-plugin-vue": "~9.9.0",
+    "vue-eslint-parser": "~9.1.0"
   },
   "devDependencies": {
     "@leukeleu/prettier-config": "~1.2.3"
