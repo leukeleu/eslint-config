@@ -9,4 +9,8 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  rules: {
+    'no-undefined': 'error',
+    'no-console': 'error',
+  },
 }
