@@ -16,14 +16,18 @@
     "config",
     "eslint",
     "javascript",
+    "vue2",
+    "nuxt2",
     "vue3"
   ],
   "license": "MIT",
   "dependencies": {
+    "@babel/eslint-parser": "~7.19.1",
     "@typescript-eslint/eslint-plugin": "~5.51.0",
     "@typescript-eslint/parser": "~5.51.0",
     "eslint": "~8.34.0",
     "eslint-config-prettier": "~8.6.0",
+    "eslint-plugin-nuxt": "~4.0.0",
     "eslint-plugin-vue": "~9.9.0",
     "vue-eslint-parser": "~9.1.0"
   },
