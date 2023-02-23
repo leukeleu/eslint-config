@@ -19,5 +19,15 @@ module.exports = {
     ],
     'vue/html-self-closing': 'error',
     'vue/html-closing-bracket-spacing': 'error',
+    'vue/block-lang': [
+      'error',
+      {
+        script: {
+          lang: 'ts',
+        },
+      },
+    ],
+    'vue/define-props-declaration': ['error', 'type-based'],
+    'vue/define-emits-declaration': ['error', 'type-based'],
   },
 }
