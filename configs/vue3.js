@@ -10,4 +10,12 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   plugins: ['@typescript-eslint', 'vuejs-accessibility'],
+  rules: {
+    'vue/component-tags-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style'],
+      },
+    ],
+  },
 }
