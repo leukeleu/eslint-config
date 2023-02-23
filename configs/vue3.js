@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'vuejs-accessibility'],
   rules: {
+    'vue/no-empty-component-block': 'error',
     'vue/component-tags-order': [
       'error',
       {
