@@ -7,4 +7,8 @@ module.exports = {
   ],
   parser: 'vue-eslint-parser',
   plugins: ['vuejs-accessibility'],
+  rules: {
+    'vue/html-self-closing': 'error',
+    'vue/html-closing-bracket-spacing': 'error',
+  },
 }
