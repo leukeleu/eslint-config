@@ -22,5 +22,25 @@ module.exports = {
     'vue/html-self-closing': 'error',
     'vue/html-closing-bracket-spacing': 'error',
     'import/no-unresolved': 'off',
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
+        pathGroups: [
+          {
+            pattern: '@/**',
+            group: 'internal',
+          },
+          {
+            pattern: '~/**',
+            group: 'internal',
+          },
+        ],
+        alphabetize: {
+          order: 'asc',
+        },
+      },
+    ],
   },
 }
