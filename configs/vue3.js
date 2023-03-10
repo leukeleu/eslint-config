@@ -17,5 +17,7 @@ module.exports = {
         order: ['script', 'template', 'style'],
       },
     ],
+    'vue/html-self-closing': 'error',
+    'vue/html-closing-bracket-spacing': 'error',
   },
 }
