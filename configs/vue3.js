@@ -30,5 +30,6 @@ module.exports = {
     ],
     'vue/define-props-declaration': ['error', 'type-based'],
     'vue/define-emits-declaration': ['error', 'type-based'],
+    'vue/html-button-has-type': 'error',
   },
 }
