@@ -1,6 +1,8 @@
 module.exports = {
   extends: [
     require.resolve('./javascript'),
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:vuejs-accessibility/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
@@ -19,5 +21,6 @@ module.exports = {
     ],
     'vue/html-self-closing': 'error',
     'vue/html-closing-bracket-spacing': 'error',
+    'import/no-unresolved': 'off',
   },
 }

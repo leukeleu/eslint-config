@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     require.resolve('./javascript'),
+    'plugin:import/recommended',
     'plugin:vuejs-accessibility/recommended',
     'plugin:vue/recommended',
     'prettier',
@@ -10,5 +11,6 @@ module.exports = {
   rules: {
     'vue/html-self-closing': 'error',
     'vue/html-closing-bracket-spacing': 'error',
+    'import/no-unresolved': 'off',
   },
 }
