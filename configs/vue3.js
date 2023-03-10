@@ -42,5 +42,10 @@ module.exports = {
         },
       },
     ],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { fixStyle: 'inline-type-imports' },
+    ],
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
   },
 }
