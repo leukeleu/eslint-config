@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'vuejs-accessibility'],
   rules: {
+    'vue/no-empty-component-block': 'error',
     'vue/component-tags-order': [
       'error',
       {
@@ -19,5 +20,16 @@ module.exports = {
     ],
     'vue/html-self-closing': 'error',
     'vue/html-closing-bracket-spacing': 'error',
+    'vue/block-lang': [
+      'error',
+      {
+        script: {
+          lang: 'ts',
+        },
+      },
+    ],
+    'vue/define-props-declaration': ['error', 'type-based'],
+    'vue/define-emits-declaration': ['error', 'type-based'],
+    'vue/html-button-has-type': 'error',
   },
 }
