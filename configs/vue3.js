@@ -26,5 +26,7 @@ module.exports = {
       },
     ],
     'vue/html-closing-bracket-spacing': 'error',
+    'vue/no-empty-component-block': 'error',
+    'vue/html-button-has-type': 'warn',
   },
 }
