@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve('./javascript'),
-    'plugin:vuejs-accessibility/recommended',
+    require.resolve('./vue-generic'),
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
@@ -9,7 +8,7 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
-  plugins: ['@typescript-eslint', 'vuejs-accessibility'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'vue/component-tags-order': [
       'error',
@@ -17,16 +16,5 @@ module.exports = {
         order: ['script', 'template', 'style'],
       },
     ],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-        },
-      },
-    ],
-    'vue/html-closing-bracket-spacing': 'error',
-    'vue/no-empty-component-block': 'error',
-    'vue/html-button-has-type': 'warn',
   },
 }
