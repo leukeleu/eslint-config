@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [require.resolve('./vue2'), 'plugin:nuxt/recommended', 'prettier'],
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false,
-  },
+  extends: [require.resolve('./vue3')],
   overrides: [
     {
       // These file names are part of the file based routing in Nuxt
@@ -15,6 +11,13 @@ module.exports = {
         '**/error.{js,ts,vue}',
       ],
       rules: { 'vue/multi-word-component-names': 'off' },
+    },
+    // Nuxt uses auto imports. This will result in 'no-undef' errors when the code is valid.
+    {
+      files: ['*.vue'],
+      rules: {
+        'no-undef': 'off',
+      },
     },
   ],
 }
