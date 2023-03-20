@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve('./vue-generic'),
+    require.resolve('./_vue-generic'),
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
     'prettier',
