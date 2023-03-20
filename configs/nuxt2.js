@@ -6,6 +6,8 @@ module.exports = {
   },
   overrides: [
     {
+      // These file names are part of the file based routing in Nuxt
+      // and are not used directly by users.
       files: [
         '**/pages/**/*.{js,ts,vue}',
         '**/layouts/**/*.{js,ts,vue}',
