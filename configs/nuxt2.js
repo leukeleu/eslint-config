@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('./vue2'), 'plugin:nuxt/recommended', 'prettier'],
+  extends: ['plugin:nuxt/recommended', 'prettier', require.resolve('./vue2')],
   parserOptions: {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
