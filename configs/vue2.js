@@ -1,8 +1,4 @@
 module.exports = {
-  extends: [
-    require.resolve('./_vue-generic'),
-    'plugin:vue/recommended',
-    'prettier',
-  ],
+  extends: ['plugin:vue/recommended', require.resolve('./_vue-generic')],
   parser: 'vue-eslint-parser',
 }

@@ -1,7 +1,8 @@
 module.exports = {
   extends: [
-    require.resolve('./javascript'),
     'plugin:vuejs-accessibility/recommended',
+    'prettier',
+    require.resolve('./javascript'),
   ],
   plugins: ['vuejs-accessibility'],
   rules: {
