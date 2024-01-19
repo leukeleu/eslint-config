@@ -23,7 +23,7 @@ To run Eslint on your code, add the following script to your package.json:
 
 ```js
 "scripts": {
-  "lint:js": "eslint . --cache",
+  "lint:js": "eslint . --ext .vue,.js,.ts --cache",
   "lintfix:js": "npm run lint:js -- --fix",
 }
 ```
