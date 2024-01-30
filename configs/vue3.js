@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
+    require.resolve('./_vue-generic'),
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
-    require.resolve('./_vue-generic'),
   ],
   parserOptions: {
     parser: '@typescript-eslint/parser',
