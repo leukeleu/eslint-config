@@ -6,6 +6,8 @@ module.exports = {
   ],
   parserOptions: {
     parser: '@typescript-eslint/parser',
+    sourceType: "module",
+    lib: ["DOM", "ESNext"]
   },
   plugins: ['@typescript-eslint'],
   rules: {
