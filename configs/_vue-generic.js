@@ -1,10 +1,11 @@
 module.exports = {
   extends: [
+    'plugin:vue/base',
     'plugin:vuejs-accessibility/recommended',
-    'prettier',
     require.resolve('./javascript'),
   ],
-  plugins: ['vuejs-accessibility'],
+  plugins: ['vue', 'vuejs-accessibility'],
+  parser: 'vue-eslint-parser',
   rules: {
     'vue/html-self-closing': [
       'error',

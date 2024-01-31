@@ -4,10 +4,17 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+  ],
+  plugins: ['@typescript-eslint'],
   parserOptions: {
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
+    lib: ['DOM', 'ESNext'],
   },
   rules: {
     'no-undefined': 'error',
