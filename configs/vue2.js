@@ -7,7 +7,7 @@ module.exports = {
     // Standard JS rules
     'eslint:recommended',
     'prettier',
-    
+
     // Vue2 rules
     'plugin:vue/recommended',
     'plugin:vuejs-accessibility/recommended',

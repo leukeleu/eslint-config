@@ -14,7 +14,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   parser: 'vue-eslint-parser',
-  
+
   // TS parser settings
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -40,5 +40,11 @@ module.exports = {
     'vue/html-closing-bracket-spacing': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/html-button-has-type': 'warn',
+    'vue/component-tags-order': [
+      'error',
+      {
+        order: ['script', 'template', 'style'],
+      },
+    ],
   },
 }

@@ -1,7 +1,8 @@
 /**
  * The configuration for basic JS files without the use of a framework.
  * Just has the recommended eslint and prettier rules
- * */
+ **/
+
 module.exports = {
   env: {
     browser: true,
