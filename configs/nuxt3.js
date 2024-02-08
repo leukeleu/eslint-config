@@ -14,6 +14,7 @@ module.exports = {
 
     // Typescript rules
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
 
     // Nuxt rules
     'plugin:nuxt/recommended',

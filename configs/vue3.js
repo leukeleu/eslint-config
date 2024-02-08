@@ -12,6 +12,7 @@ module.exports = {
     'plugin:vuejs-accessibility/recommended',
     // Typescript rules
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
   ],
   parser: 'vue-eslint-parser',
 
