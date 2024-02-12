@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     // Standard JS rules
     'eslint:recommended',
-    'prettier',
 
     // Vue2 rules
     'plugin:vue/recommended',
@@ -14,6 +13,9 @@ module.exports = {
 
     // Nuxt rules
     'plugin:nuxt/recommended',
+
+    // Prettier rules (turns off rules that conflict with Prettier)
+    'prettier',
   ],
   // We don't need to include the vue-eslint-parser here because it's included in the nuxt/recommended config.
 

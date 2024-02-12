@@ -6,11 +6,13 @@ module.exports = {
   extends: [
     // Standard JS rules
     'eslint:recommended',
-    'prettier',
 
     // Vue2 rules
     'plugin:vue/recommended',
     'plugin:vuejs-accessibility/recommended',
+
+    // Prettier rules (turns off rules that conflict with Prettier)
+    'prettier',
   ],
   parser: 'vue-eslint-parser',
   rules: {
