@@ -1,7 +1,7 @@
 {
   "name": "@leukeleu/eslint-config",
   "repository": "https://github.com/leukeleu/eslint-config.git",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Reusable Eslint config for Leukeleu projects",
   "scripts": {
     "prettier": "prettier . --cache",
