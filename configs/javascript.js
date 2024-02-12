@@ -8,6 +8,10 @@ module.exports = {
     browser: true,
     node: true,
   },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
   extends: ['eslint:recommended', 'prettier'],
   rules: {
     'no-undefined': 'error',
