@@ -6,13 +6,15 @@ module.exports = {
   extends: [
     // Standard JS rules
     'eslint:recommended',
-    'prettier',
     // Vue3 rules
     'plugin:vue/vue3-recommended',
     'plugin:vuejs-accessibility/recommended',
     // Typescript rules
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/stylistic',
+
+    // Prettier rules (turns off rules that conflict with Prettier)
+    'prettier',
   ],
   parser: 'vue-eslint-parser',
 
