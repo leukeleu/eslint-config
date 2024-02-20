@@ -49,5 +49,8 @@ module.exports = {
         order: ['script', 'template', 'style'],
       },
     ],
+
+    // Our typescript custom rules
+    '@typescript-eslint/consistent-type-definitions': 'off',
   },
 }
