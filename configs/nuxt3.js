@@ -33,8 +33,11 @@ module.exports = {
     lib: ['DOM', 'ESNext'],
   },
   rules: {
+    // Our base custom rules
     'no-undefined': 'error',
     'no-console': 'error',
+
+    // Our Vue custom rules
     'vue/html-self-closing': [
       'error',
       {
@@ -46,6 +49,9 @@ module.exports = {
     'vue/html-closing-bracket-spacing': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/html-button-has-type': 'warn',
+
+    // Our typescript custom rules
+    '@typescript-eslint/consistent-type-definitions': 'off',
   },
   overrides: [
     {
