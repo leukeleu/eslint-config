@@ -33,6 +33,6 @@
     "vue-eslint-parser": "~9.4.2"
   },
   "devDependencies": {
-    "@leukeleu/prettier-config": "~3.1.0"
+    "@leukeleu/prettier-config": "~3.2.0"
   }
 }
