@@ -1,15 +1,14 @@
 import {
+  typeScriptConfig,
+  prettierConfig,
   eslintRecommended,
   leukeleuOverrides,
-  prettierConfig,
-  vue2Config,
 } from './base.js'
 
 export default [
   eslintRecommended,
+  ...typeScriptConfig,
   leukeleuOverrides,
-  // Vue 2 specific configuration
-  ...vue2Config,
-  // Prettier is last to turn off conflicting rules.
+  // Prettier turns off conflicting rules and needs to be last
   prettierConfig,
 ]

@@ -1,20 +1,8 @@
-/**
- * The configuration for basic JS files without the use of a framework.
- * Just has the recommended eslint and prettier rules
- **/
+import { eslintRecommended, leukeleuOverrides, prettierConfig } from './base.js'
 
-module.exports = {
-  env: {
-    browser: true,
-    node: true,
-  },
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  extends: ['eslint:recommended', 'prettier'],
-  rules: {
-    'no-undefined': 'error',
-    'no-console': 'error',
-  },
-}
+export default [
+  eslintRecommended,
+  leukeleuOverrides,
+  // Prettier is last to turn off conflicting rules.
+  prettierConfig,
+]
