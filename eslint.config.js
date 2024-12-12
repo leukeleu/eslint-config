@@ -1,3 +1,8 @@
 import eslintConfigJavascript from './configs/javascript.js'
 
-export default [...eslintConfigJavascript]
+export default [
+  ...eslintConfigJavascript,
+  {
+    ignores: ['tests/fixtures'],
+  },
+]

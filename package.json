@@ -14,7 +14,8 @@
     "lint:js": "eslint --cache",
     "lintfix:js": "npm run lint:js -- --fix",
     "lint": "npm run lint:prettier && npm run lint:js",
-    "lintfix": "npm run lintfix:prettier && npm run lintfix:js"
+    "lintfix": "npm run lintfix:prettier && npm run lintfix:js",
+    "test": "vitest"
   },
   "keywords": [
     "config",
@@ -36,6 +37,7 @@
     "typescript-eslint": "~8.18.0"
   },
   "devDependencies": {
-    "@leukeleu/prettier-config": "~3.2.0"
+    "@leukeleu/prettier-config": "~3.2.0",
+    "vitest": "^2.1.8"
   }
 }
