@@ -1,6 +1,6 @@
 {
   "name": "@leukeleu/eslint-config",
-  "repository": "https://github.com/leukeleu/eslint-config.git",
+  "repository": "https://github.com/leukeleu/eslint-config",
   "version": "3.2.0",
   "description": "Reusable Eslint config for Leukeleu projects",
   "scripts": {
