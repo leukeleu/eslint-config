@@ -1,1 +1,3 @@
-module.exports = require('@leukeleu/prettier-config')
+import prettierConfig from '@leukeleu/prettier-config'
+
+export default prettierConfig

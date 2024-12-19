@@ -1,38 +1,43 @@
 {
   "name": "@leukeleu/eslint-config",
-  "repository": "https://github.com/leukeleu/eslint-config.git",
+  "type": "module",
+  "exports": {
+    "./configs/*": "./configs/*.js"
+  },
+  "repository": "https://github.com/leukeleu/eslint-config",
   "version": "3.2.0",
   "description": "Reusable Eslint config for Leukeleu projects",
   "scripts": {
     "prettier": "prettier . --cache",
     "lint:prettier": "npm run prettier -- --check",
     "lintfix:prettier": "npm run prettier -- --write",
-    "lint:js": "eslint . --ext .vue,.js,.ts --cache",
+    "lint:js": "eslint --cache",
     "lintfix:js": "npm run lint:js -- --fix",
     "lint": "npm run lint:prettier && npm run lint:js",
-    "lintfix": "npm run lintfix:prettier && npm run lintfix:js"
+    "lintfix": "npm run lintfix:prettier && npm run lintfix:js",
+    "test": "vitest"
   },
   "keywords": [
     "config",
     "eslint",
     "javascript",
     "vue2",
-    "nuxt2",
-    "vue3"
+    "vue3",
+    "nuxt3"
   ],
   "license": "MIT",
   "dependencies": {
     "@babel/eslint-parser": "~7.25.1",
-    "@typescript-eslint/eslint-plugin": "~8.17.0",
-    "@typescript-eslint/parser": "~8.17.0",
-    "eslint": "~8.57.0",
+    "@eslint/js": "~9.16.0",
+    "eslint": "~9.16.0",
     "eslint-config-prettier": "~9.1.0",
-    "eslint-plugin-nuxt": "~4.0.0",
     "eslint-plugin-vue": "~9.32.0",
     "eslint-plugin-vuejs-accessibility": "~2.4.1",
-    "vue-eslint-parser": "~9.4.2"
+    "globals": "~15.13.0",
+    "typescript-eslint": "~8.18.0"
   },
   "devDependencies": {
-    "@leukeleu/prettier-config": "~3.2.0"
+    "@leukeleu/prettier-config": "~3.2.0",
+    "vitest": "^2.1.8"
   }
 }
