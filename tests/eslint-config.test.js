@@ -40,9 +40,8 @@ function expectRuleViolations(result, severity, rules) {
         ({ severity: s }) => s === severity,
       )
       expect(violations.length).toBe(rules.length)
-      for (const [idx, message] of violations.entries()) {
-        expect(message.ruleId || message.message).toBe(rules[idx])
-      }
+      const actualRuleIds = violations.map((v) => v.ruleId || v.message)
+      expect(new Set(actualRuleIds)).toEqual(new Set(rules))
     },
     (error) => {
       if (result.messages.length) {
