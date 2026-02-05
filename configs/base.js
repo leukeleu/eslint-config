@@ -52,40 +52,6 @@ const vueRules = {
   'vue/html-button-has-type': 'warn',
 }
 
-// Vue 2 configuration
-export const vue2Config = [
-  // Enable vue/recommended rules
-  ...pluginVue.configs['flat/vue2-recommended'],
-  // Enable vuejs-accessibility/recommended rules
-  ...pluginVueA11y.configs['flat/recommended'],
-  {
-    name: '@leukeleu/vue2',
-    files: ['*.vue', '**/*.vue'],
-    languageOptions: {
-      parserOptions: {
-        parser: '@babel/eslint-parser',
-        requireConfigFile: false,
-      },
-    },
-    rules: {
-      ...vueRules,
-      // Our custom Vue 2 rules
-      'vue/block-order': [
-        'error',
-        {
-          order: [
-            ['script', 'template'],
-            'style:not([scoped])',
-            'style[scoped]',
-          ],
-        },
-      ],
-      // Deprecated rule
-      'vue/component-tags-order': 'off',
-    },
-  },
-]
-
 // Leukeleu Vue 3 overrides
 export const leukeleuVue3Overrides = {
   name: '@leukeleu/vue3',
