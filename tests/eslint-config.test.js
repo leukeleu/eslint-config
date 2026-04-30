@@ -80,7 +80,6 @@ function expectErrors(result, errors) {
 for (const [key, config] of Object.entries({
   javascript: './configs/javascript/eslint.config.mjs',
   typescript: './configs/typescript/eslint.config.mjs',
-  vue2: './configs/vue2/eslint.config.mjs',
   vue3: './configs/vue3/eslint.config.mjs',
 })) {
   describe(`${key} config`, () => {
@@ -101,35 +100,6 @@ for (const [key, config] of Object.entries({
     })
   })
 }
-
-/**
- * Vue2 config lints Vue components
- */
-describe('vue2 config', () => {
-  it('lints vue files', async () => {
-    const [result] = await lintFiles('./configs/vue2/eslint.config.mjs', [
-      './fixtures/vue2/components/example.vue',
-    ])
-    expectWarnings(result, [
-      'vue/no-v-html',
-      'vue/attributes-order',
-      'vue/html-button-has-type',
-    ])
-    expectErrors(result, [
-      'vue/no-empty-component-block',
-      'vue/block-order',
-      'no-unused-vars',
-      'no-undefined',
-      'no-undef',
-      'no-console',
-      'vue/block-order',
-      'vuejs-accessibility/click-events-have-key-events',
-      'vuejs-accessibility/no-static-element-interactions',
-      'vuejs-accessibility/no-autofocus',
-      'vue/no-multiple-template-root',
-    ])
-  })
-})
 
 /**
  * TypeScript and Vue3 configs lint TypeScript files the same way

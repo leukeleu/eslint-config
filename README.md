@@ -30,14 +30,6 @@ import eslintConfig from '@leukeleu/eslint-config/configs/typescript'
 export default eslintConfig
 ```
 
-### Vue 2
-
-```js
-import eslintConfig from '@leukeleu/eslint-config/configs/vue2'
-
-export default eslintConfig
-```
-
 ### Vue 3
 
 ```js
