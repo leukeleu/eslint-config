@@ -5,7 +5,7 @@
     "./configs/*": "./configs/*.js"
   },
   "repository": "https://github.com/leukeleu/eslint-config",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "Reusable Eslint config for Leukeleu projects",
   "scripts": {
     "prettier": "prettier . --cache",
